@@ -370,7 +370,7 @@ section .menu-card-top{
   margin-right: -3px;
   margin-bottom: 5rem;
   text-align: center;
-  color: rgb(84, 245, 9);
+  color: rgb(242, 246, 247);
   position: relative;
 }
 
@@ -451,7 +451,156 @@ section .menu-card-top{
   line-height: 30px;
   font-weight: 400;
 }
+
 /* Menu Card End */
+
+/* Loction Part Start */
+
+/* Location Image Slider Start  */
+
+
+.location-body{
+  background: linear-gradient(to right, #2c5364, #0f2027);
+  height: 100vh;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.location-slider{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate{
+  0%{
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100%{
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+.location-slider span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+}
+
+.location-slider span img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* border-radius: 100px; */
+  object-fit: cover;
+  transition: 2s;
+}
+
+.location-slider span:hover img{
+  transform: translateY(-50px) scale(1.2);
+}
+
+/* Location Image Slider End  */
+
+/* Location Heading Start */
+
+
+.location-headind{
+  width: 100%;
+  text-align: center;
+  margin-top: -60px;
+}
+
+.location-headind h1{
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  margin-top: 65px;
+  letter-spacing: 3px;
+  margin-right: -3px;
+  margin-bottom: 5rem;
+  text-align: center;
+  color: rgb(242, 246, 247);
+  position: relative;
+}
+
+.location-headind h1::after {
+  content: '';
+  width: 20rem;
+  height: 0.8rem;
+  background-color: #f10808;
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2rem;
+}
+
+.location-headind h2{
+  font-size: 25px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.location-headind p{
+  font-size: 15px;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+/* Location Heading End */
+
+/* Location Map Start */
+.location-map{
+  width: 100%;
+  height: 70vh;
+}
+
+.location-map h2{
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  margin-top: 65px;
+  letter-spacing: 3px;
+  margin-right: -3px;
+  margin-bottom: 5rem;
+  text-align: center;
+  color: rgb(242, 246, 247);
+  position: relative;
+}
+
+.location-map h2::after {
+  content: '';
+  width: 10rem;
+  height: 0.8rem;
+  background-color: #31fc09;
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2rem;
+}
+
+.location-map iframe{
+  width: 100%;
+  height: 100%;
+}
+
+/* Location Map End */
+
+/* Loction Part End */
 
 /* Tranning Background Vedio Start */
 section .video-container{
@@ -527,6 +676,62 @@ section .video-container{
 
 
 /* Tranning Background Vedio End */
+
+/* Join Start */
+section .join-container{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 50px;
+  margin-top: 80px;
+ 
+}
+
+#bg-video{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  
+
+
+}
+
+.join-word{
+  width: 90%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+
+.join-word span{
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 5vw;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1vw;
+  text-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transform: translateY(-100vh);
+  animation: fall 3.5s forwards;
+}
+
+@keyframes fall{
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.video-word span:nth-child(2){
+  animation-delay: 0.7s;
+}
+
+.video-word span:nth-child(3){
+  animation-delay: 1.4s;
+}
+/* Join End */
 
 /* Meet our Trainers Start */
 
