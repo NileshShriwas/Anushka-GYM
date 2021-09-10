@@ -8,7 +8,7 @@ Responsive Gym website
 
 ## 1. Demo Website
 
-- 👉 Netlify : https://condescending-banach-3d58b0.netlify.app/
+- 👉 Netlify : https://anushka-gym.netlify.app/
 
 
 ## 2. You Will Learn
