@@ -21,9 +21,9 @@ Responsive Gym website
 
 - Profile Card, Product Card.
 
-- Dropdown Navigation Bar (Only CSS)
+- Dropdown Navigation Bar (CSS & JavaScript).
 
-- Google Map API
+- Google Map API.
 ```
 
 ## 3. Clone repo
